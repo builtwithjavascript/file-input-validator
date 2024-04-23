@@ -90,7 +90,6 @@ export const ValidatorStrategyLookup: {
 
     fileInfo.name = validatorItem.value
     fileInfo.displayName = validatorItem.displayValue
-    console.log('fileName.length', fileName.length, options.maxNameLength, `"${fileName}"`)
     if (fileName.length > options.maxNameLength) {
       const message = `max length allowed is ${options.maxNameLength.toString()} chars`
       validatorItem.hasError = true

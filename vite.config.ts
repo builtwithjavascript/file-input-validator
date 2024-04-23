@@ -6,8 +6,6 @@ import path from 'path'
 import { name } from './package.json'
 const projectName = name.replace('@builtwithjavascript/', '').trim().toLowerCase()
 
-console.log('projectName', projectName)
-
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
