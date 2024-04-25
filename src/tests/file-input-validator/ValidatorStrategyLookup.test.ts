@@ -1,6 +1,7 @@
 import { getMockFileInfo, getMockValidatorItems } from './test-helpers'
-import { DefaultFileValidatorOptions, ValidatorStrategyLookup } from '../../file-input-validator/FileInputValidator'
-import { IFileValidatorItem, IFileValidatorOptions } from '@/file-input-validator'
+import { DefaultFileValidatorOptions } from '../../file-input-validator'
+import { ValidatorStrategyLookup } from '../../file-input-validator/FileInputValidator'
+import type { IFileValidatorItem, IFileValidatorOptions } from '@/file-input-validator'
 
 describe('ValidatorStrategyLookup', () => {
   it(`should return a defined instance for "name"`, () => {

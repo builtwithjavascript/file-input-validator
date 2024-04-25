@@ -1,6 +1,6 @@
 {
   "name": "@builtwithjavascript/file-input-validator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A generic file input validator",
   "author": "Damiano Fusco",
   "license": "MIT",

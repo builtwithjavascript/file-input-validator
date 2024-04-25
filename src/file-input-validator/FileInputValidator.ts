@@ -1,4 +1,5 @@
-import { IFileInfo, IFileValidatorItem, IFileValidator, IFileValidatorOptions, FileInputValidatorItems } from './Models'
+import { DefaultFileValidatorOptions, FileInputValidatorItems } from './Models'
+import type { IFileInfo, IFileValidatorItem, IFileValidator, IFileValidatorOptions } from './Models'
 
 export const getFileExtensionFromName = (name: string): string => {
   const parts = (name || '').split('.')
@@ -187,14 +188,6 @@ export const ValidatorStrategyLookup: {
   lastmodified: (options: IFileValidatorOptions, fileInfo: IFileInfo, validatorItems: IFileValidatorItem[]) => {
     validateLastModified(options, fileInfo, validatorItems)
   }
-}
-
-export const DefaultFileValidatorOptions: IFileValidatorOptions = {
-  allowedTypes: ['csv'],
-  propertiesToValidate: ['name', 'type', 'size'],
-  maxSize: 50,
-  maxNameLength: 75,
-  nameTruncateMaxLength: 35
 }
 
 export class FileValidator implements IFileValidator {

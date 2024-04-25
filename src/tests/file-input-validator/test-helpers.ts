@@ -1,4 +1,5 @@
-import { IFileInfo, IFileValidatorItem, FileInputValidatorItems } from '../../file-input-validator'
+import { FileInputValidatorItems } from '../../file-input-validator'
+import type { IFileInfo, IFileValidatorItem } from '../../file-input-validator'
 
 export const getMockFileInfo = (): IFileInfo => {
   return {

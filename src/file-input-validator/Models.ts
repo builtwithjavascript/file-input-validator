@@ -62,3 +62,11 @@ export const FileInputValidatorItems: IFileValidatorItem[] = [
     iconError: '' //IconConstants.IconError
   }
 ]
+
+export const DefaultFileValidatorOptions: IFileValidatorOptions = {
+  allowedTypes: ['csv'],
+  propertiesToValidate: ['name', 'type', 'size'],
+  maxSize: 50,
+  maxNameLength: 75,
+  nameTruncateMaxLength: 35
+}
