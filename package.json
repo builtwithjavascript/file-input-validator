@@ -1,6 +1,6 @@
 {
   "name": "@builtwithjavascript/file-input-validator",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A generic file input validator that can be used in other frameworks like React, Vue, Svelte etc.",
   "author": "Damiano Fusco",
   "license": "MIT",
