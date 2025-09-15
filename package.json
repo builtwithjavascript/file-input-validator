@@ -1,6 +1,6 @@
 {
   "name": "@builtwithjavascript/file-input-validator",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A generic file input validator that can be used in other frameworks like React, Vue, Svelte etc.",
   "author": "Damiano Fusco",
   "license": "MIT",
@@ -30,21 +30,12 @@
     "postversion": "git push",
     "push": "npm run pretty; git add .; git commit -m \"Latest\"; git push"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged \"./src/**/*.ts\""
-    }
-  },
   "devDependencies": {
-    "@types/jest": "^29.5.12",
-    "@types/node": "^20.12.7",
-    "husky": "^9.0.11",
-    "jsdom": "^24.0.0",
-    "prettier": "^3.2.5",
-    "pretty-quick": "^4.0.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.4.5",
-    "vite": "^7.0.3",
+    "@types/node": "^24.4.0",
+    "jsdom": "^27.0.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.5",
     "vitest": "^3.2.4"
   },
   "files": [
