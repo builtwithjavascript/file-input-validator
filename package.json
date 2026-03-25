@@ -1,6 +1,6 @@
 {
   "name": "@builtwithjavascript/file-input-validator",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A generic file input validator that can be used in other frameworks like React, Vue, Svelte etc.",
   "author": "Damiano Fusco",
   "license": "MIT",
@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build-types": "tsc src/index.ts --esModuleInterop --declaration --emitDeclarationOnly --outDir dist",
+    "build-types": "tsc -p tsconfig.build.json",
     "build": "npm run pretty && tsc --esModuleInterop && vite build && npm run build-types",
     "pub": "npm run build; npm publish --access public --otp=",
     "test": "TESTING=true vitest run",
